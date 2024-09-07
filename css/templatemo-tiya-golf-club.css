@@ -476,13 +476,13 @@ strong {
   margin-left: 10px;
   position: relative;
   bottom: 5px;
+  font-size: 20px;
 }
 
 .navbar-brand-text small {
   display: block;
-  font-size: 10px;
+  font-size: 20px;
   line-height: 1;
-  text-transform: uppercase;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -643,7 +643,7 @@ strong {
   HERO        
 -----------------------------------------*/
 .hero-section {
-  background-image: url('../images/anna-rosar-ZxFyVBHMK-c-unsplash.jpg');
+  background-image: url('../images/slider-2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
