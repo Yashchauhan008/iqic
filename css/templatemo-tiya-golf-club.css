@@ -769,6 +769,9 @@ strong {
   background-color: var(--white-color);
   border-radius: var(--border-radius-large);
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1063,6 +1066,23 @@ strong {
   margin-right: auto;
 }
 
+.footer-brand{
+  font-size: 40px;
+  font-weight: 700;
+}
+
+@media screen and (max-width:989px) {
+  .footer-brand{
+    font-size: 23px;
+    font-weight: 700;
+  }
+}
+@media screen and (max-width:589px) {
+  .footer-brand{
+    font-size: 15px;
+    font-weight: 700;
+  }
+}
 /*---------------------------------------
   CUSTOM FORM               
 -----------------------------------------*/
@@ -1124,6 +1144,9 @@ strong {
   SOCIAL ICON               
 -----------------------------------------*/
 .social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0;
   padding: 0;
 }
@@ -1152,7 +1175,13 @@ strong {
   background: var(--primary-color);
   color: var(--white-color);
 }
-
+@media screen and (min-width: 991px) {
+  .social-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 /*---------------------------------------
   RESPONSIVE STYLES               
 -----------------------------------------*/
