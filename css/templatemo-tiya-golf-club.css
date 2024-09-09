@@ -755,7 +755,7 @@ strong {
 .accordion {
   margin-top: -40px;
   margin-bottom: -40px;
-  background-color: #3d405b5b;
+  background-color: #ffffff5b;
   backdrop-filter: blur(5px);
   border-radius: 40px;
   padding: 30px 30px 30px 30px;
@@ -766,7 +766,7 @@ strong {
 }
 
 .accordion-item {
-  background-color: #F4F1DE;
+  background-color: #fff;
   border-radius: 40px !important;
   margin-bottom: 30px;
   border: none;
@@ -777,13 +777,13 @@ strong {
   box-shadow: none;
   border-radius: 40px !important;
   font-size: 15px;
-  background-color: #F4F1DE;
+  background-color: #fff;
   font-family: sans-serif;
 }
 
 .accordion-button:not(.collapsed) {
   color: #3d405b;
-  background-color: #F4F1DE;
+  background-color: #fff;
 }
 
 h2.accordion-header button {
@@ -946,6 +946,7 @@ h2.accordion-header button {
 
 .custom-block-bg {
   background: var(--white-color);
+  background-color: #F4F1DE;
 }
 
 .custom-block-date-wrap {
@@ -1043,6 +1044,9 @@ h2.accordion-header button {
 /*---------------------------------------
   EVENTS SECTION            
 -----------------------------------------*/
+.section-bg{
+  background-color: #fff;
+}
 .events-section.section-bg .container > .row {
   margin-right: 5px;
   margin-left: 5px;
