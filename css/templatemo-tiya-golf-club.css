@@ -955,6 +955,92 @@ h2.accordion-header button {
   margin-bottom: 0;
 }
 
+
+.topic {
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s forwards;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.topic i {
+  margin-right: 15px;
+  color: #007bff;
+}
+
+.topic:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.img .Auto1 {
+  margin: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.img .Auto1 img {
+  width: 500px;
+  border-radius: 5px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.img .Auto1:hover img {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+  border-radius: 50%;
+}
+
+.card {
+  height: 300px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+}
+
+.form-inline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-control {
+  width: 70%;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .form-control {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+}
+
+
 /*---------------------------------------
   CUSTOM BLOCK              
 -----------------------------------------*/
@@ -1758,9 +1844,10 @@ fun-facts
   --hover-bg: #FFE5F4;
   --hover-text: #E50087;
   max-width: 230px;
+  height: 180px;
   text-align: center;
   background: var(--bg);
-  padding: 1.5em;
+  padding:20px;
   /* padding-block: 1.8em; */
   border-radius: 15px;
   position: relative;
@@ -1771,7 +1858,7 @@ fun-facts
   justify-content: center;
   align-items: center;
   text-wrap: wrap;
-  gap: 1em;
+  gap: 10px;
   border: 1px solid #222a42;
 }
 
@@ -1779,6 +1866,7 @@ fun-facts
   color: #464853;
   line-height: 1.5em;
   font-size: 1em;
+  /* background-color: red; */
 }
 
 .card .icon{
@@ -1999,4 +2087,172 @@ fun-facts
 }
 .timeline .timeline-container.primary .timeline-icon {
   background: #F2CC8F !important;
+}
+
+
+
+/* -----------------------------------------------------
+consulting
+------------------------------------------- */
+
+
+.consulting-section {
+  position: relative;
+  padding: 20px;
+  background: white;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.consulting-section h2 {
+  font-size: 2em;
+  color: #007bff;
+  opacity: 0; 
+  transform: translateY(20px); 
+  animation: fadeInUp 1s forwards; 
+}
+
+@keyframes fadeInUp {
+  to {
+      opacity: 1; 
+      transform: translateY(0); 
+  }
+}
+
+.topic {
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s forwards;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.topic i {
+  margin-right: 15px;
+  color: #007bff;
+}
+
+.topic:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.one {
+  padding: 20px;
+  text-align: center;
+  background: white;
+  border: 1px solid #007bff;
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  perspective: 1000px; 
+}
+
+.one:hover {
+  transform: rotateY(10deg); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.one h4 {
+  margin-top: 10px; 
+  color: #007bff; 
+}
+
+@media (max-width: 576px) {
+  .one {
+      margin-bottom: 20px;
+  }
+}
+
+.product-sourcing h2 {
+  font-size: 2em;
+  color: #007bff; 
+  margin-bottom: 20px;
+}
+
+.card {
+  border-radius: 15px; 
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+  color: #007bff;
+}
+
+.product-sourcing {
+  font-size: 1.2rem;
+}
+
+
+
+
+/* ---------------------------------------
+why us 
+----------------------------------------------- */
+.text {
+  z-index: 2;
+  text-align: center; 
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  /* font-size: 1.2rem; */
+}
+
+.topic {
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s forwards;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.topic i {
+  margin-right: 15px;
+  color: #007bff;
+}
+
+.topic:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+section .topic{
+  margin-top: 30px;
+}
+.img img{
+  border-radius: 11px;
 }
