@@ -1,181 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+    <!-- CSS FILES -->
 
-  <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap"
-    rel="stylesheet" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
 
-  <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/bootstrap-icons.css" rel="stylesheet" />
 
-  <link href="../css/bootstrap-icons.css" rel="stylesheet" />
+    <link href="../css/templatemo-tiya-golf-club.css" rel="stylesheet" />
 
-  <link href="../css/templatemo-tiya-golf-club.css" rel="stylesheet" />
+    <link rel="icon" href="../images/logo.png" type="image/x-icon" />
 
-  <link rel="icon" href="../images/logo.png" type="image/x-icon">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+  </head>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
-
-</head>
-
-<body>
-  <main>
+  <body>
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="../index.html">
-          <img src="../images/logo.png" class="img-fluid" alt="Tiya Golf Club" />
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img
+            src="../images/logo.png"
+            class="img-fluid"
+            alt="Tiya Golf Club"
+          />
           <span class="navbar-brand-text">
             The International Quality
             <small>Inspection Company</small>
           </span>
         </a>
-    
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-    
+
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-lg-auto">
             <li class="nav-item">
-              <a class="nav-link inactive" href="../index.html">Home</a> <!-- Removed 'active' class -->
+              <a class="nav-link" href="./index.html">Home</a>
             </li>
-    
+
             <li class="nav-item">
-              <a class="nav-link " href="../about.html">About</a> <!-- Added 'active' class here -->
+              <a class="nav-link" href="../about.html">About</a>
             </li>
-            
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">Services</a>
-    
-              <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarLightDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Services</a
+              >
+
+              <ul
+                class="dropdown-menu dropdown-menu-light"
+                aria-labelledby="navbarLightDropdownMenuLink"
+              >
                 <li>
-                  <a class="dropdown-item" href="services/consulting.html">Consulting</a>
+                  <a class="dropdown-item" href="services/consulting.html"
+                    >Consulting</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="services/productInspection.html">Product Inspection</a>
+                  <a class="dropdown-item" href="productInspection.html"
+                    >Product Inspection</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="services/typeOfInspection.html">Type Of Inspection</a>
+                  <a class="dropdown-item" href="typeOfInspection.html"
+                    >Type Of Inspection</a
+                  >
                 </li>
+
                 <li>
-                  <a class="dropdown-item" href="services/vendorAudit.html">Vendor Audit</a>
+                  <a class="dropdown-item" href="vendorAudit.html"
+                    >Vendor Audit</a
+                  >
                 </li>
               </ul>
             </li>
-    
+
             <li class="nav-item">
-              <a class="nav-link" href="../whyUs.html">Why Us</a>
+              <a class="nav-link " href="./whyUs.html">Why Us</a>
             </li>
-    
+
             <li class="nav-item">
-              <a class="nav-link" href="../contactUs.html">Contact Us</a>
+              <a class="nav-link " href="./contactUs.html"
+                >Contact Us</a
+              >
             </li>
           </ul>
+
+          <!-- style="color: #56E76E; border-color: #56E76E; :hover:{background-color: #3D405B;};" -->
+          <!-- <div class="d-none d-lg-block ms-lg-3">
+                  <a
+                    class="btn custom-btn custom-border-btn"
+                    data-bs-toggle="offcanvas"
+                    href="#offcanvasExample"
+                    role="button"
+                    aria-controls="offcanvasExample"
+                    >whatsapp</a
+                  >
+                </div> -->
         </div>
       </div>
     </nav>
-    
+    <main>
+      <section
+        class="hero-section hero-50 d-flex justify-content-center align-items-center"
+        id="section_1"
+      >
+        <div class="section-overlay"></div>
 
+        <svg
+          viewBox="0 0 1962 178"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <path
+            fill="#3D405B"
+            d="M 0 114 C 118.5 114 118.5 167 237 167 L 237 167 L 237 0 L 0 0 Z"
+            stroke-width="0"
+          ></path>
+          <path
+            fill="#3D405B"
+            d="M 236 167 C 373 167 373 128 510 128 L 510 128 L 510 0 L 236 0 Z"
+            stroke-width="0"
+          ></path>
+          <path
+            fill="#3D405B"
+            d="M 509 128 C 607 128 607 153 705 153 L 705 153 L 705 0 L 509 0 Z"
+            stroke-width="0"
+          ></path>
+          <path
+            fill="#3D405B"
+            d="M 704 153 C 812 153 812 113 920 113 L 920 113 L 920 0 L 704 0 Z"
+            stroke-width="0"
+          ></path>
+          <path
+            fill="#3D405B"
+            d="M 919 113 C 1048.5 113 1048.5 148 1178 148 L 1178 148 L 1178 0 L 919 0 Z"
+            stroke-width="0"
+          ></path>
+          <path
+            fill="#3D405B"
+            d="M 1177 148 C 1359.5 148 1359.5 129 1542 129 L 1542 129 L 1542 0 L 1177 0 Z"
+            stroke-width="0"
+          ></path>
+          <path
+            fill="#3D405B"
+            d="M 1541 129 C 1751.5 129 1751.5 138 1962 138 L 1962 138 L 1962 0 L 1541 0 Z"
+            stroke-width="0"
+          ></path>
+        </svg>
 
-    <section class="hero-section hero-50 d-flex justify-content-center align-items-center" id="section_1">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <h1 class="text-white mb-4 pb-2">Introduction.</h1>
 
-      <div class="section-overlay"></div>
-
-      <svg viewBox="0 0 1962 178" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <path fill="#3D405B" d="M 0 114 C 118.5 114 118.5 167 237 167 L 237 167 L 237 0 L 0 0 Z" stroke-width="0">
-        </path>
-        <path fill="#3D405B" d="M 236 167 C 373 167 373 128 510 128 L 510 128 L 510 0 L 236 0 Z" stroke-width="0">
-        </path>
-        <path fill="#3D405B" d="M 509 128 C 607 128 607 153 705 153 L 705 153 L 705 0 L 509 0 Z" stroke-width="0">
-        </path>
-        <path fill="#3D405B" d="M 704 153 C 812 153 812 113 920 113 L 920 113 L 920 0 L 704 0 Z" stroke-width="0">
-        </path>
-        <path fill="#3D405B" d="M 919 113 C 1048.5 113 1048.5 148 1178 148 L 1178 148 L 1178 0 L 919 0 Z"
-          stroke-width="0"></path>
-        <path fill="#3D405B" d="M 1177 148 C 1359.5 148 1359.5 129 1542 129 L 1542 129 L 1542 0 L 1177 0 Z"
-          stroke-width="0"></path>
-        <path fill="#3D405B" d="M 1541 129 C 1751.5 129 1751.5 138 1962 138 L 1962 138 L 1962 0 L 1541 0 Z"
-          stroke-width="0"></path>
-      </svg>
-
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-6 col-12">
-
-            <h1 class="text-white mb-4 pb-2">Introduction.</h1>
-
-            <!-- <a href="#section_2" class="btn custom-btn smoothscroll me-3">Learn more</a> -->
+              <!-- <a href="#section_2" class="btn custom-btn smoothscroll me-3">Learn more</a> -->
+            </div>
           </div>
-
         </div>
-      </div>
 
-      <svg viewBox="0 0 1962 178" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <path fill="#ffffff" d="M 0 114 C 118.5 114 118.5 167 237 167 L 237 167 L 237 0 L 0 0 Z" stroke-width="0">
-        </path>
-        <path fill="#ffffff" d="M 236 167 C 373 167 373 128 510 128 L 510 128 L 510 0 L 236 0 Z" stroke-width="0">
-        </path>
-        <path fill="#ffffff" d="M 509 128 C 607 128 607 153 705 153 L 705 153 L 705 0 L 509 0 Z" stroke-width="0">
-        </path>
-        <path fill="#ffffff" d="M 704 153 C 812 153 812 113 920 113 L 920 113 L 920 0 L 704 0 Z" stroke-width="0">
-        </path>
-        <path fill="#ffffff" d="M 919 113 C 1048.5 113 1048.5 148 1178 148 L 1178 148 L 1178 0 L 919 0 Z"
-          stroke-width="0"></path>
-        <path fill="#ffffff" d="M 1177 148 C 1359.5 148 1359.5 129 1542 129 L 1542 129 L 1542 0 L 1177 0 Z"
-          stroke-width="0"></path>
-        <path fill="#ffffff" d="M 1541 129 C 1751.5 129 1751.5 138 1962 138 L 1962 138 L 1962 0 L 1541 0 Z"
-          stroke-width="0"></path>
-      </svg>
-    </section>
+        <svg
+          viewBox="0 0 1962 178"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <path
+            fill="#ffffff"
+            d="M 0 114 C 118.5 114 118.5 167 237 167 L 237 167 L 237 0 L 0 0 Z"
+            stroke-width="0"
+          ></path>
+          <path
+            fill="#ffffff"
+            d="M 236 167 C 373 167 373 128 510 128 L 510 128 L 510 0 L 236 0 Z"
+            stroke-width="0"
+          ></path>
+          <path
+            fill="#ffffff"
+            d="M 509 128 C 607 128 607 153 705 153 L 705 153 L 705 0 L 509 0 Z"
+            stroke-width="0"
+          ></path>
+          <path
+            fill="#ffffff"
+            d="M 704 153 C 812 153 812 113 920 113 L 920 113 L 920 0 L 704 0 Z"
+            stroke-width="0"
+          ></path>
+          <path
+            fill="#ffffff"
+            d="M 919 113 C 1048.5 113 1048.5 148 1178 148 L 1178 148 L 1178 0 L 919 0 Z"
+            stroke-width="0"
+          ></path>
+          <path
+            fill="#ffffff"
+            d="M 1177 148 C 1359.5 148 1359.5 129 1542 129 L 1542 129 L 1542 0 L 1177 0 Z"
+            stroke-width="0"
+          ></path>
+          <path
+            fill="#ffffff"
+            d="M 1541 129 C 1751.5 129 1751.5 138 1962 138 L 1962 138 L 1962 0 L 1541 0 Z"
+            stroke-width="0"
+          ></path>
+        </svg>
+      </section>
 
-    
+      <main class="container">
+        <h1>&nbsp;</h1>
+        <h1>&nbsp;</h1>
 
-    <main class="container">
-      <div class="row">
-          <section class="col-lg-6 mb-4">
-              <h2>Our Story</h2>
-              <div class="topic">
-                  <i class="fa-solid fa-arrow-right-long"></i>
-                  <p>AQS (Asian Quality Service) is an <strong>independent company</strong> covering quality inspection services in the ceramic industry, located in the world's second-largest ceramic hub, Morbi, India.</p>
-              </div>
-              <div class="topic">
-                  <i class="fa-solid fa-arrow-right-long"></i>
-                  <p>We are one of the leading <strong>QUALITY INSPECTION COMPANIES</strong> based in Morbi, India, serving for more than <strong>10 years</strong>.</p>
-              </div>
-              <div class="topic">
-                  <i class="fa-solid fa-arrow-right-long"></i>
-                  <p>Asian Quality Services specializes in quality assurance & inspection for <strong>ceramic wall tiles, ceramic floor tiles, porcelain (vitrified) tiles, sanitary wares, marble, granite, and quartz stone.</strong></p>
-              </div>
-              <div class="topic"> 
-                  <i class="fa-solid fa-arrow-right-long"></i>
-                  <p>Built on <strong>Competence, Certainty, Quality, Neutrality, and Objectivity</strong>, AQS closely collaborates with customers, providing need-based customized services to meet <strong>demanding market requirements.</strong></p>
-              </div>
-              <div class="topic">
-                  <i class="fa-solid fa-arrow-right-long"></i>
-                  <p>We are unique as our entire team is <strong>qualified ceramic engineers</strong> with over 10+ years of experience in the ceramic industry. We ensure our services are <strong>aligned with ISO & European standards.</strong></p>
-              </div>
+        <div class="row about-block1">
+          <section class="col-lg-10 mb-4">
+            <h2 style="text-align: center">Our Story</h2>
+            <div class="topic">
+              <i class="fa-solid fa-arrow-right-long"></i>
+              <p>
+                AQS (Asian Quality Service) is an
+                <strong>independent company</strong> covering quality inspection
+                services in the ceramic industry, located in the world's
+                second-largest ceramic hub, Morbi, India.
+              </p>
+            </div>
+            <div class="topic">
+              <i class="fa-solid fa-arrow-right-long"></i>
+              <p>
+                We are one of the leading
+                <strong>QUALITY INSPECTION COMPANIES</strong> based in Morbi,
+                India, serving for more than <strong>10 years</strong>.
+              </p>
+            </div>
+            <div class="topic">
+              <i class="fa-solid fa-arrow-right-long"></i>
+              <p>
+                Asian Quality Services specializes in quality assurance &
+                inspection for
+                <strong
+                  >ceramic wall tiles, ceramic floor tiles, porcelain
+                  (vitrified) tiles, sanitary wares, marble, granite, and quartz
+                  stone.</strong
+                >
+              </p>
+            </div>
+            <div class="topic">
+              <i class="fa-solid fa-arrow-right-long"></i>
+              <p>
+                Built on
+                <strong
+                  >Competence, Certainty, Quality, Neutrality, and
+                  Objectivity</strong
+                >, AQS closely collaborates with customers, providing need-based
+                customized services to meet
+                <strong>demanding market requirements.</strong>
+              </p>
+            </div>
+            <div class="topic">
+              <i class="fa-solid fa-arrow-right-long"></i>
+              <p>
+                We are unique as our entire team is
+                <strong>qualified ceramic engineers</strong> with over 10+ years
+                of experience in the ceramic industry. We ensure our services
+                are <strong>aligned with ISO & European standards.</strong>
+              </p>
+            </div>
           </section>
-          <section class="col-lg-6 mb-4 d-flex justify-content-center">
-              <img src="./images/Consulting.jpg" alt="Our team of ceramic engineers" class="img-fluid" loading="lazy">
-          </section>
-      </div>
+          <div class="about-block2">
+            <section class="col-lg-6 mb-4 d-flex justify-content-center">
+              <img
+                src="./images/Consulting.jpg"
+                alt="Our team of ceramic engineers"
+                class="img-fluid"
+                loading="lazy"
+              />
+            </section>
+            <section class="col-lg-6 mb-4 d-flex justify-content-center">
+              <img
+                src="./images/Consulting.jpg"
+                alt="Our team of ceramic engineers"
+                class="img-fluid"
+                loading="lazy"
+              />
+            </section>
+          </div>
+        </div>
 
-      <!-- <div class="row">
+        <!-- <div class="row">
           <section class="col-md-12 mb-4">
               <h2>Additional Information</h2>
               <div class="topic">
@@ -211,43 +351,66 @@
           </section>
       </div> -->
 
-      <div class="row" style="text-align: center; line-height: 1.6;">
-    <section class="col-md-12 mb-4">
-        <h2>Additional Information</h2>
-        <div class="topic">
-            <i class="fa-solid fa-arrow-right-long"></i>
-            <p>We ensure all testing of tiles is conducted according to <strong>ISO & European standards.</strong> Our dedicated team is here to provide exceptional quality assurance.</p>
+        <div class="row about-block3">
+          <section class="col-md-12 mb-4 about-block3-in">
+            <h2>Additional Information</h2>
+            <div class="topic">
+              <i class="fa-solid fa-arrow-right-long"></i>
+              <p>
+                We ensure all testing of tiles is conducted according to
+                <strong>ISO & European standards.</strong> Our dedicated team is
+                here to provide exceptional quality assurance.
+              </p>
+            </div>
+            <div class="topic">
+              <i class="fa-solid fa-arrow-right-long"></i>
+              <p>
+                Throughout our history, we've faced challenges but remained
+                committed to excellence, working closely with clients to meet
+                their needs and expectations.
+              </p>
+            </div>
+          </section>
+          <section class="col-md-12 mb-4 about-block3-in">
+            <h2>Our Vision</h2>
+            <div class="topic">
+              <i class="fa-solid fa-arrow-right-long"></i>
+              <p>
+                A company vision statement is one of your most important
+                business documents, guiding decision-making and helping to focus
+                long-term goals.
+              </p>
+            </div>
+            <div class="topic">
+              <i class="fa-solid fa-arrow-right-long"></i>
+              <p>
+                Core values are the organization’s long-term beliefs and
+                principles that guide employee behavior, ensuring everyone works
+                towards a common goal.
+              </p>
+            </div>
+          </section>
+          <section class="col-md-12 mb-4 about-block3-in">
+            <h2>Our Mission</h2>
+            <div class="topic">
+              <i class="fa-solid fa-arrow-right-long"></i>
+              <p>
+                Our mission is to provide top-notch inspection services that
+                help our clients maintain the highest quality in their products,
+                ensuring customer satisfaction.
+              </p>
+            </div>
+            <div class="topic">
+              <i class="fa-solid fa-arrow-right-long"></i>
+              <p>
+                We aim to lead the market by setting benchmarks in quality
+                assurance and continuous improvement across all service areas.
+              </p>
+            </div>
+          </section>
         </div>
-        <div class="topic">
-            <i class="fa-solid fa-arrow-right-long"></i>
-            <p>Throughout our history, we've faced challenges but remained committed to excellence, working closely with clients to meet their needs and expectations.</p>
-        </div>
-    </section>
-    <section class="col-md-12 mb-4">
-        <h2>Our Vision</h2>
-        <div class="topic">
-            <i class="fa-solid fa-arrow-right-long"></i>
-            <p>A company vision statement is one of your most important business documents, guiding decision-making and helping to focus long-term goals.</p>
-        </div>
-        <div class="topic">
-            <i class="fa-solid fa-arrow-right-long"></i>
-            <p>Core values are the organization’s long-term beliefs and principles that guide employee behavior, ensuring everyone works towards a common goal.</p>
-        </div>
-    </section>
-    <section class="col-md-12 mb-4">
-        <h2>Our Mission</h2>
-        <div class="topic">
-            <i class="fa-solid fa-arrow-right-long"></i>
-            <p>Our mission is to provide top-notch inspection services that help our clients maintain the highest quality in their products, ensuring customer satisfaction.</p>
-        </div>
-        <div class="topic">
-            <i class="fa-solid fa-arrow-right-long"></i>
-            <p>We aim to lead the market by setting benchmarks in quality assurance and continuous improvement across all service areas.</p>
-        </div>
-    </section>
-</div>
 
-      <!-- <div class="img">
+        <!-- <div class="img">
           <div class="Auto1">
               <img src="./images/girl-taking-selfie-with-friends-golf-field.jpg" alt="Vision and Mission" class="img-fluid">
           </div>
@@ -256,7 +419,7 @@
           </div>
       </div> -->
 
-      <div class="values">
+        <div class="values">
           <h1>Our Values</h1>
           <!-- <div id="valuesCarousel" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
@@ -342,196 +505,233 @@
             <div class="swiper-wrapper">
               <div class="slider-item swiper-slide">
                 <div class="slider-image-wrapper">
-                  <img class="slider-image" src="https://images.unsplash.com/photo-1498307833015-e7b400441eb8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2600&q=80" alt="SliderImg">
-                  </div>
+                  <img
+                    class="slider-image"
+                    src="https://images.unsplash.com/photo-1498307833015-e7b400441eb8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2600&q=80"
+                    alt="SliderImg"
+                  />
+                </div>
                 <div class="slider-item-content">
                   <h1>Postcards From Italy</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore
+                  </p>
                 </div>
               </div>
               <div class="slider-item swiper-slide">
                 <div class="slider-image-wrapper">
-                  <img class="slider-image" src="https://images.unsplash.com/photo-1491900177661-4e1cd2d7cce2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80" alt="SliderImg">
-                  </div>
+                  <img
+                    class="slider-image"
+                    src="https://images.unsplash.com/photo-1491900177661-4e1cd2d7cce2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
+                    alt="SliderImg"
+                  />
+                </div>
                 <div class="slider-item-content">
                   <h1>Bunker</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore
+                  </p>
                 </div>
               </div>
               <div class="slider-item swiper-slide">
                 <div class="slider-image-wrapper">
-                  <img class="slider-image" src="https://images.unsplash.com/photo-1482192505345-5655af888cc4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2600&q=80" alt="SliderImg">
-                  </div>
+                  <img
+                    class="slider-image"
+                    src="https://images.unsplash.com/photo-1482192505345-5655af888cc4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2600&q=80"
+                    alt="SliderImg"
+                  />
+                </div>
                 <div class="slider-item-content">
                   <h1>Small Mountain</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore
+                  </p>
                 </div>
               </div>
               <div class="slider-item swiper-slide">
                 <div class="slider-image-wrapper">
-                  <img class="slider-image" src="https://images.unsplash.com/photo-1564604761388-83eafc96f668?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=801.2.1&auto=format&fit=crop&w=2167&q=80" alt="SliderImg">
-                  </div>
+                  <img
+                    class="slider-image"
+                    src="https://images.unsplash.com/photo-1564604761388-83eafc96f668?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=801.2.1&auto=format&fit=crop&w=2167&q=80"
+                    alt="SliderImg"
+                  />
+                </div>
                 <div class="slider-item-content">
                   <h1>Walking On a Dream</h1>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore
+                  </p>
                 </div>
               </div>
             </div>
             <div class="slider-buttons">
-                <button class="swiper-button-prev">Prev</button>
-                <button class="swiper-button-next">Next</button>
+              <button class="swiper-button-prev">Prev</button>
+              <button class="swiper-button-next">Next</button>
             </div>
-          
+
             <div class="swiper-pagination"></div>
           </div>
         </div>
-  </main>
+      </main>
 
-    <section class="contact-section section-padding" id="section_5">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5 col-12">
-            <form
-              action="#"
-              method="post"
-              class="custom-form contact-form"
-              role="form"
-            >
-              <h2 class="mb-4 pb-2">Contact the IQIC</h2>
+      <section class="contact-section section-padding" id="section_5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-12">
+              <form
+                action="#"
+                method="post"
+                class="custom-form contact-form"
+                role="form"
+              >
+                <h2 class="mb-4 pb-2">Contact the IQIC</h2>
 
-              <div class="row">
-                <div class="col-lg-6 col-md-6 col-12">
-                  <div class="form-floating">
-                    <input
-                      type="text"
-                      name="full-name"
-                      id="full-name"
-                      class="form-control"
-                      placeholder="Full Name"
-                      required=""
-                    />
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        name="full-name"
+                        id="full-name"
+                        class="form-control"
+                        placeholder="Full Name"
+                        required=""
+                      />
 
-                    <label for="floatingInput">Full Name</label>
+                      <label for="floatingInput">Full Name</label>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-floating">
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        pattern="[^ @]*@[^ @]*"
+                        class="form-control"
+                        placeholder="Email address"
+                        required=""
+                      />
+
+                      <label for="floatingInput">Email address</label>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12 col-12">
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control"
+                        id="message"
+                        name="message"
+                        placeholder="Describe message here"
+                      ></textarea>
+
+                      <label for="floatingTextarea">Message</label>
+                    </div>
+
+                    <button type="submit" class="form-control">
+                      Submit Form
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="col-lg-6 col-12">
+              <div class="contact-info mt-5">
+                <div class="contact-info-item">
+                  <div class="contact-info-body">
+                    <strong>Morbi, Gujrat, India</strong>
+
+                    <p class="mt-2 mb-1">
+                      <a href="tel: 010-020-0340" class="contact-link">
+                        +91 2387456378
+                      </a>
+                    </p>
+
+                    <p class="mb-0">
+                      <a href="mailto:info@company.com" class="contact-link">
+                        info@company.com
+                      </a>
+                    </p>
+                  </div>
+
+                  <div class="contact-info-footer">
+                    <a href="#">Directions</a>
                   </div>
                 </div>
 
-                <div class="col-lg-6 col-md-6 col-12">
-                  <div class="form-floating">
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      pattern="[^ @]*@[^ @]*"
-                      class="form-control"
-                      placeholder="Email address"
-                      required=""
-                    />
-
-                    <label for="floatingInput">Email address</label>
-                  </div>
-                </div>
-
-                <div class="col-lg-12 col-12">
-                  <div class="form-floating">
-                    <textarea
-                      class="form-control"
-                      id="message"
-                      name="message"
-                      placeholder="Describe message here"
-                    ></textarea>
-
-                    <label for="floatingTextarea">Message</label>
-                  </div>
-
-                  <button type="submit" class="form-control">
-                    Submit Form
-                  </button>
-                </div>
+                <img src="images/WorldMap.svg" class="img-fluid" alt="" />
               </div>
-            </form>
-          </div>
-
-          <div class="col-lg-6 col-12">
-            <div class="contact-info mt-5">
-              <div class="contact-info-item">
-                <div class="contact-info-body">
-                  <strong>Morbi, Gujrat, India</strong>
-
-                  <p class="mt-2 mb-1">
-                    <a href="tel: 010-020-0340" class="contact-link">
-                      +91 2387456378
-                    </a>
-                  </p>
-
-                  <p class="mb-0">
-                    <a href="mailto:info@company.com" class="contact-link">
-                      info@company.com
-                    </a>
-                  </p>
-                </div>
-
-                <div class="contact-info-footer">
-                  <a href="#">Directions</a>
-                </div>
-              </div>
-
-              <img src="images/WorldMap.svg" class="img-fluid" alt="" />
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-12 text-center mb-5 mb-lg-0">
+            <a href="index.html">
+              <img
+                src="../images/logo.png"
+                class="navbar-brand-image img-fluid mb-2"
+                alt=""
+              />
+            </a>
+            <div class="footer-brand">
+              The International Quality Inspection Company
+              <!-- <small>Golf Club</small> -->
+            </div>
+          </div>
 
-  </main>
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 col-12 text-center mb-5 mb-lg-0">
-          <a href="index.html">
-            <img src="../images/logo.png" class="navbar-brand-image img-fluid mb-2" alt="" />
-          </a>
-          <div class="footer-brand">
-            The International Quality Inspection Company
-            <!-- <small>Golf Club</small> -->
+          <div class="col-lg-12 col-12">
+            <ul
+              class="social-icon mt-lg-2 mt-2 mb-4 d-flex justify-content-center"
+            >
+              <li class="social-icon-item">
+                <a href="#" class="social-icon-link bi-instagram"></a>
+              </li>
+
+              <li class="social-icon-item">
+                <a href="#" class="social-icon-link bi-twitter"></a>
+              </li>
+
+              <li class="social-icon-item">
+                <a href="#" class="social-icon-link bi-whatsapp"></a>
+              </li>
+            </ul>
           </div>
         </div>
-
-        <div class="col-lg-12 col-12">
-          <ul class="social-icon mt-lg-2 mt-2 mb-4 d-flex justify-content-center">
-            <li class="social-icon-item">
-              <a href="#" class="social-icon-link bi-instagram"></a>
-            </li>
-
-            <li class="social-icon-item">
-              <a href="#" class="social-icon-link bi-twitter"></a>
-            </li>
-
-            <li class="social-icon-item">
-              <a href="#" class="social-icon-link bi-whatsapp"></a>
-            </li>
-          </ul>
-        </div>
       </div>
-    </div>
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#81B29A" fill-opacity="1"
-        d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
-      </path>
-    </svg>
-  </footer>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#81B29A"
+          fill-opacity="1"
+          d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+        ></path>
+      </svg>
+    </footer>
 
-  <script src="../js/jquery.min.js"></script>
-  <script src="../js/bootstrap.bundle.min.js"></script>
-  <script src="../js/jquery.sticky.js"></script>
-  <script src="../js/click-scroll.js"></script>
-  <script src="../js/animated-headline.js"></script>
-  <script src="../js/modernizr.js"></script>
-  <script src="../js/custom.js"></script>
-  <script src="./script.js"></script>
-  <script src="./js//bootstrap.bundle.min.js"></script>
-  <script src='./js/sviper.js'></script><script  src="./script.js"></script>
-  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script> -->
-</body>
+    <script></script>
 
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery.sticky.js"></script>
+    <script src="../js/click-scroll.js"></script>
+    <script src="../js/animated-headline.js"></script>
+    <script src="../js/modernizr.js"></script>
+    <script src="../js/custom.js"></script>
+    <script src="./script.js"></script>
+    <script src="./js//bootstrap.bundle.min.js"></script>
+    <script src="./js/sviper.js"></script>
+    <script src="./script.js"></script>
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script> -->
+  </body>
 </html>

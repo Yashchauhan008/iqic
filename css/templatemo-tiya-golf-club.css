@@ -516,7 +516,7 @@ strong {
   pointer-events: none;
 }
 
-.navbar .dropdown-menu::before {
+/* .navbar .dropdown-menu::before {
   content: "";
   width: 0;
   height: 0;
@@ -526,7 +526,7 @@ strong {
   position: absolute;
   top: -10px;
   left: 10px;
-}
+} */
 
 .navbar .dropdown-item {
   display: inline-block;
@@ -642,14 +642,6 @@ strong {
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
   color: var(--link-hover-color);
-}
-
-/* Custom active color for the 'Why Us' link */
-.navbar-nav .nav-link.active {
-  color: var(--custom-btn-bg-color); /* Black color for the active link */
-}
-.navbar-nav .nav-link.inactive {
-  /* color: #fff; Black color for the active link */
 }
 
 /* Reset the Home link's color to be like other non-active links */
@@ -965,7 +957,7 @@ h2.accordion-header button {
 .topic {
   display: flex;
   align-items: center;
-  text-align: left;
+  text-align: center;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeIn 0.5s forwards;
@@ -986,6 +978,7 @@ h2.accordion-header button {
 .topic:hover {
   background-color: rgba(102, 51, 153, 0.14);
 }
+
 .img {
   display: flex;
   flex-wrap: wrap;
@@ -2161,7 +2154,8 @@ consulting
 }
 
 .topic:hover {
-  transform: translateY(-5px);
+  transform: translateX(50px);
+  padding: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -2259,10 +2253,10 @@ why us
   color: #007bff;
 }
 
-.topic:hover {
+/* .topic:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
+} */
 @keyframes fadeIn {
   from {
       opacity: 0;
@@ -2274,7 +2268,7 @@ why us
   }
 }
 section .topic{
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 .img img{
   border-radius: 11px;
@@ -2301,6 +2295,69 @@ coursole in about us
   align-items: center;
   flex-direction: column;
   padding: 32px;
+}
+.about-block1{
+  /* background-color: red !important; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vh;
+}
+.about-block2{
+  /* background-color: green; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;  
+  text-align: center;
+  /* flex-wrap: wrap; */
+}
+.about-block3{
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  /* background-color: red; */
+  margin-top: 50px;
+}
+.about-block3 section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: pink; */
+}
+.about-block3-in{
+  /* background-color: gray; */
+
+}
+.about-block2 img{
+  width: 100%;
+
+}
+
+
+@media screen and (max-width: 520px) {
+  .about-block2 img{
+    width: 300px;
+  }
+  .about-block1{
+    margin-top: 0vh;
+  }
+  .about-block2{
+    flex-wrap: wrap;
+  }
+}
+
+
+@media screen and (max-width: 987px){
+  .about-block1{
+    margin-top: 0;
+  }
 }
 
 .values>h1{
