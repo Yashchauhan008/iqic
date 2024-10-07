@@ -955,9 +955,9 @@ h2.accordion-header button {
 
 
 .topic {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  text-align: center;
+  text-align: center; */
   opacity: 0;
   transform: translateY(20px);
   animation: fadeIn 0.5s forwards;
@@ -1164,6 +1164,13 @@ h2.accordion-header button {
   background: var(--custom-btn-bg-hover-color);
   color: var(--white-color);
 }
+@media screen and (max-width:989px) {
+  .custom-block-image{
+    background-color: red;
+    width: 100%;
+  }
+}
+
 
 /*---------------------------------------
   EVENTS SECTION            
@@ -1591,13 +1598,11 @@ about us
 .section_about-me {
     width: 100%;
     padding: 0 30px;
-    /* right: 13%;
-    left: 13%; */
     position: relative;
-    /* min-height: 100vh; */
     margin-top: 30px;
     padding-bottom: 80px;
     border-bottom: 3px solid rgba(250, 250, 250, 0.25);
+    
 }
 .section_about-me h2{
   text-align: center;
@@ -1608,7 +1613,7 @@ about us
 }
 
 .consulting{
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .section-heading h2 {
@@ -1635,7 +1640,10 @@ about us
 .section_about-me .service_data{
   text-align: center;
   letter-spacing: 0.4px;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #9EAFC5;
 }
 
 .about_section_2 {
@@ -1925,12 +1933,16 @@ fun-facts
 
 
 .marquee-container {
-  height: 200px;
+  /* display: flex; */
+  /* padding-top: 20px; */
+  /* background-color: red; */
+  height: 240px;
   overflow: hidden;
   line-height: 30px;
 
   .marquee {
     top: 0;
+    padding-top: 30px;
     left: 100%;
     width: 100%;
     overflow: hidden;
@@ -1986,7 +1998,7 @@ fun-facts
 
 
 .container_tl {
-  max-width: 650px;
+  max-width: 850px;
   margin: 50px auto;
   /* background-color: red; */
 }
@@ -2199,8 +2211,12 @@ consulting
 
 .product-sourcing h2 {
   font-size: 2em;
-  color: #007bff; 
+  color: #565C74; 
   margin-bottom: 20px;
+}
+
+.product-sourcing p{
+  padding: 0 250px;
 }
 
 .card {
@@ -2223,7 +2239,69 @@ consulting
   font-size: 1.2rem;
 }
 
-
+.our-strength{
+  background-color: redx;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #565C74;
+}
+.our-strength h2{
+  color: #565C74;
+}
+.grid{
+  /* background-color: green; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.grid-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.square{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  /* background-color: gray; */
+  border: 4px solid #cdaf84e1;
+  width: 350px;
+  height: 100px;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #565C74;
+  font-weight: 600;
+}
+@media (max-width: 900px) {
+  .our-strength h2{
+    font-size: 35px;
+  }
+  .square{
+    width: 500px;
+    font-size: 23px;
+    color: #565C74;
+    font-weight: 600;
+  }
+  .grid{
+    flex-wrap: wrap;
+  }
+  .grid-row{
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 600px) {
+  .square{
+    width: 80%;
+  }
+}
 
 
 /* ---------------------------------------
@@ -2274,6 +2352,22 @@ section .topic{
   border-radius: 11px;
 }
 
+.whyus-block2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: yellow; */
+  height:30vh;
+  /* background-image: url(../images/frederik-rosar-NDSZcCfnsbY-unsplash.jpg); */
+  object-fit: cover;
+}
+
+.whyus-block2 section img{
+  height: 30vh;
+  width: 80vw;
+  object-fit: cover;
+  border-radius: 20px;
+}
 
 /* ----------------------
 coursole in about us 
@@ -2302,6 +2396,7 @@ coursole in about us
   align-items: center;
   justify-content: center;
   margin-top: 10vh;
+  /* color: #889DB8; */
 }
 .about-block2{
   /* background-color: green; */
@@ -2312,6 +2407,9 @@ coursole in about us
   gap: 10px;  
   text-align: center;
   /* flex-wrap: wrap; */
+}
+.about-block2 img{
+  border-radius: 20px;
 }
 .about-block3{
   /* background-color: blue; */
