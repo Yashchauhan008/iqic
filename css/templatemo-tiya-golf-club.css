@@ -511,7 +511,7 @@ strong {
   opacity: 0;
   min-width: 9rem;
   margin-top: 20px;
-  padding: 13px 0 10px 0;
+  padding: 13px 200px 10px 0;
   transition: all 0.3s;
   pointer-events: none;
 }
@@ -893,9 +893,14 @@ h2.accordion-header button {
   color: #fff;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 700px) {
   .section-bg-image{
-    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .accordion{
+    width: 100vw;
   }
 }
 
@@ -1180,6 +1185,7 @@ h2.accordion-header button {
 .events-section.section-bg .container > .row {
   margin-right: 5px;
   margin-left: 5px;
+  margin-bottom: 100px;
 }
 
 .events-section.section-bg .container > .row .row {
@@ -1309,12 +1315,25 @@ h2.accordion-header button {
   font-weight: var(--font-weight-bold);
 }
 
+.contact-btn{
+  color: white;
+  background-color: var(--custom-btn-bg-color);
+  border-radius: 10px;
+  font-size: 15px;
+}
+.contact-btn:hover{
+  opacity: 0.8;
+  background-color: var(--custom-btn-hover-color);
+  color: var(--dark-color);
+}
 /*---------------------------------------
   SITE FOOTER            
 -----------------------------------------*/
 .site-footer {
   position: relative;
-  padding-bottom: 200px;
+  bottom: 0;
+  /* background-color: red; */
+  /* padding-bottom: 200px; */
 }
 
 .site-footer .container {
@@ -1324,10 +1343,9 @@ h2.accordion-header button {
 
 .site-footer svg {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
+  bottom: 200px;
   pointer-events: none;
+  /* background-color: red; */
 }
 
 .site-footer-title {
@@ -1355,6 +1373,28 @@ h2.accordion-header button {
     font-size: 15px;
     font-weight: 700;
   }
+}
+@media screen and (max-width:991px) {
+  .site-footer svg{
+    bottom: 250px;
+  }
+}
+@media screen and (max-width:768px) {
+  .site-footer svg{
+    bottom: 280px;
+  }
+}
+@media screen and (max-width:589px) {
+  .site-footer svg{
+    bottom: 250px;
+  }
+}
+
+.footer-content{
+  position: relative;
+  bottom: 0;
+  padding-bottom: 00px;
+  background-color: #3D405B;
 }
 /*---------------------------------------
   CUSTOM FORM               
@@ -1445,7 +1485,7 @@ h2.accordion-header button {
 }
 
 .social-icon-link:hover {
-  background: var(--primary-color);
+  background: var(--custom-btn-bg-color);
   color: var(--white-color);
 }
 @media screen and (min-width: 991px) {
@@ -1544,11 +1584,6 @@ h2.accordion-header button {
 
   .section-bg-image-block {
     padding: 30px;
-  }
-
-  .site-footer {
-    padding-top: 20px;
-    padding-bottom: 100px;
   }
 }
 
@@ -2552,7 +2587,7 @@ p {
   height: 100%;
   max-height: 420px;
   border-radius: 10px;
-  background: red;
+  /* background: red; */
 }
 
 .slider-image-wrapper {
