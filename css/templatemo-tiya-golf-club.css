@@ -1376,17 +1376,20 @@ h2.accordion-header button {
 }
 @media screen and (max-width:991px) {
   .site-footer svg{
-    bottom: 250px;
+    bottom: 230px;
   }
 }
 @media screen and (max-width:768px) {
   .site-footer svg{
-    bottom: 280px;
+    bottom: 270px;
+  }
+  .about-footer svg{
+    bottom: 250px;
   }
 }
 @media screen and (max-width:589px) {
   .site-footer svg{
-    bottom: 250px;
+    bottom: 240px;
   }
 }
 
@@ -1554,7 +1557,7 @@ h2.accordion-header button {
 
   .hero-section {
     position: relative;
-    top: 82px;
+    top: 72px;
     margin-bottom: 82px;
   }
 
@@ -1825,7 +1828,11 @@ button:hover {
     .about-me{
       transform: translateY(100px);
     }
+    .hero-section{
+      
+    }
 }
+
 
 
 
@@ -2418,6 +2425,8 @@ coursole in about us
 
 
 .values{
+  position: relative;
+  margin-bottom: 1000px;
   font-family: "Montserrat", sans-serif;
   margin: 0;
   width: 100%;
@@ -2807,3 +2816,7 @@ type of inspection
   background-color: transparent;
   height: 50px;
 }
+.mb100{
+  margin-bottom: 200px;
+}
+
