@@ -580,8 +580,9 @@ strong {
 }
 
 .navbar-toggler:focus {
-  outline: none;
   box-shadow: none;
+  background-color: transparent;
+  outline: none;
 }
 
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
@@ -909,6 +910,7 @@ h2.accordion-header button {
 -----------------------------------------*/
 .about-section {
   padding-bottom: 70px;
+  color: #889DB8;
 }
 
 .about-h3 {
@@ -970,7 +972,8 @@ h2.accordion-header button {
   border-radius: 20px;
 }
 .topic p{
-  color: #000000b8;
+  /* color: #889DB8; */
+  color: #657b97;
   text-align: center;
 }
 
@@ -1170,7 +1173,7 @@ h2.accordion-header button {
 }
 @media screen and (max-width:989px) {
   .custom-block-image{
-    background-color: red;
+    /* background-color: red; */
     width: 100%;
   }
 }
@@ -1557,7 +1560,7 @@ h2.accordion-header button {
 
   .hero-section {
     position: relative;
-    top: 72px;
+    top: 62px;
     margin-bottom: 82px;
   }
 
@@ -1651,6 +1654,7 @@ about us
 
 .consulting{
   font-size: 40px;
+  color: #3D405B;
 }
 
 .section-heading h2 {
@@ -2455,7 +2459,7 @@ coursole in about us
   align-items: center;
   justify-content: center;
   margin-top: 15vh;
-  /* color: #889DB8; */
+  color: #3D405B;
 }
 .about-block2{
   /* background-color: green; */
@@ -2488,9 +2492,8 @@ coursole in about us
   flex-direction: column;
   /* background-color: pink; */
 }
-.about-block3-in{
-  /* background-color: gray; */
-
+.about-block3 h2{
+  color: #3D405B;
 }
 .about-block2 img{
   width: 90vw;
@@ -2742,10 +2745,12 @@ type of inspection
   transition: transform 0.3s ease;
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px #3D405B;
   overflow: hidden;
   max-width: 1200px;
   margin-bottom: 2rem;
+  /* border: 1px solid #3D405B; */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 }
 
 .card2:hover {
