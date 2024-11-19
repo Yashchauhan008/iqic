@@ -1425,6 +1425,25 @@ h2.accordion-header button {
   width: 100%;
   color: white;
 }
+.contact-number{
+  text-align: center;
+  color: #F2CC8F;
+  font-size: 15px;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+}
+@media screen and (max-width:989px) {
+  .contact-number{
+    font-size: 15px;
+    transform: translateY(-45px);
+  }
+}
+@media screen and (max-width:600px) {
+  .contact-number{
+    font-size: 15px;
+    transform: translateY(-45px);
+  }
+}
 /*---------------------------------------
   SITE FOOTER            
 -----------------------------------------*/
@@ -1442,7 +1461,7 @@ h2.accordion-header button {
 
 .site-footer svg {
   position: absolute;
-  bottom: 270px;
+  bottom: 300px;
   pointer-events: none;
   /* background-color: red; */
 }
