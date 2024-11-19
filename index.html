@@ -29,7 +29,7 @@
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand d-flex align-items-center" href="index.html">
-            <img src="images/logo.png" class="img-fluid" alt="Tiya Golf Club" />
+            <img src="images/logo1.png" class="nav-logo img-fluid" alt="the iqic" />
             <span class="navbar-brand-text">
               The International Quality
               <small>Inspection Company</small>
@@ -116,7 +116,12 @@
         class="hero-section d-flex justify-content-center align-items-center"
         id=""
       >
-        <div class="section-overlay"></div>
+      <div class="section-mesh"></div>
+        <div class="section-overlay">
+          <img class="overlay-image" src="./images/slider-1.jpg" />
+          <img class="overlay-image" src="./images/slider-2.jpg" />
+          <img class="overlay-image" src="./images/slider-3.jpg" />
+        </div>
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
@@ -126,7 +131,7 @@
           ></path>
         </svg>
 
-        <div class="container">
+        <div class="container" style="z-index: 100;">
           <div class="row">
             <div class="col-lg-6 col-12 mb-5 mb-lg-0">
               <h2 class="text-white">The Hub of Quality</h2>
@@ -151,23 +156,11 @@
               </div>
             </div>
 
-            <div class="col-lg-6 col-12">
-              <div class="ratio ratio-16x9">
-                <!-- <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/MGNgbNGOzh84"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe> -->
-              </div>
-            </div>
+
           </div>
         </div>
 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="z-index: 100;">
           <path
             fill="#ffffff"
             fill-opacity="1"
@@ -531,6 +524,7 @@
             background-color: #3d405b;
             margin-top: -5px;
             padding-bottom: 20px;
+            padding-top: 20px;
           "
         >
           <div class="row">
@@ -545,12 +539,20 @@
               <div class="footer-brand" style="color: white">
                 The International Quality Inspection Company
               </div>
+              <div class="footer-brand-small">
+                Assuring Quality
+              </div>
+
             </div>
 
             <div class="col-lg-12 col-12">
               <ul
                 class="social-icon mt-lg-2 mt-2 mb-4 d-flex justify-content-center"
               >
+                <li class="social-icon-item">
+                  <a href="https://www.google.com/maps?q=22.8066,70.8177" class="social-icon-link bi-geo-alt" target="_blank"></a>
+                </li>
+
                 <li class="social-icon-item">
                   <a href="#" class="social-icon-link bi-instagram"></a>
                 </li>
@@ -589,5 +591,21 @@
     <script src="js/animated-headline.js"></script>
     <script src="js/modernizr.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+      const images = document.querySelectorAll('.overlay-image');
+      let currentIndex = 0;
+
+      function showNextImage() {
+        images[currentIndex].classList.remove('active'); // Hide current image
+        currentIndex = (currentIndex + 1) % images.length; // Move to the next index
+        images[currentIndex].classList.add('active'); // Show next image
+      }
+
+      // Initialize the first image
+      images[currentIndex].classList.add('active');
+
+      // Change image every 2 seconds
+      setInterval(showNextImage, 3000);
+    </script>
   </body>
 </html>
