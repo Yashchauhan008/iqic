@@ -3104,9 +3104,3 @@ type of inspection
   transform: translateY(0px) rotate(180deg);
   z-index: 1000;
 }
-@media screen and (max-width:989px) {
-  .homesvg{
-    transform: translateY(0);
-  }
-
-}
