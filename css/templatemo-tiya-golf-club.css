@@ -1688,7 +1688,7 @@ h2.accordion-header button {
 
 
   .navbar-expand-xl .navbar-nav .nav-link {
-    margin: 50px;
+    margin: 0 50px 0 0;
     padding: 0;
   }
 
@@ -3106,7 +3106,7 @@ type of inspection
 }
 @media screen and (max-width:989px) {
   .homesvg{
-    /* transform: translateY(0); */
+    transform: translateY(0);
   }
 
 }
