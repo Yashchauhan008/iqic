@@ -541,6 +541,15 @@ opacity: 0;
   font-size: 23px;
   line-height: 1;
 }
+
+@media screen and (max-width:600px) {
+  .navbar-brand-text{
+    font-style: 20px;
+  }
+  .navbar-brand-text small{
+    font-style: 20px;
+  }
+}
 .nav-logo{
   transform: scale(1.5) translateX(-10px);
 }
