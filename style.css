@@ -525,7 +525,7 @@ https://templatemo.com/tm-587-tiya-golf-club
   }
   
   .custom-nav .nav-item {
-    /* margin-right: 15px; Adjust the value as needed */
+    margin-right: 15px; /* Adjust the value as needed */
   }
   
   .navbar-brand-text {
@@ -540,6 +540,16 @@ https://templatemo.com/tm-587-tiya-golf-club
     display: block;
     font-size: 23px;
     line-height: 1;
+  }
+  
+  @media screen and (max-width:600px) {
+    .navbar-brand-text{
+      background-color: red;
+      font-style: 20px;
+    }
+    .navbar-brand-text small{
+      font-style: 20px;
+    }
   }
   .nav-logo{
     transform: scale(1.5) translateX(-10px);
@@ -1688,7 +1698,7 @@ https://templatemo.com/tm-587-tiya-golf-club
   
   
     .navbar-expand-xl .navbar-nav .nav-link {
-      margin: 50px;
+      margin-left: 0px;
       padding: 0;
     }
   
@@ -3085,7 +3095,7 @@ https://templatemo.com/tm-587-tiya-golf-club
   }
   
   .table-sec .tables .nav-item {
-    /* margin: 15px 0; */
+    margin: 15px 0;
   }
   
   .thead{
@@ -3103,10 +3113,4 @@ https://templatemo.com/tm-587-tiya-golf-club
   .homesvg{
     transform: translateY(0px) rotate(180deg);
     z-index: 1000;
-  }
-  @media screen and (max-width:989px) {
-    .homesvg{
-      transform: translateY(0);
-    }
-  
   }
